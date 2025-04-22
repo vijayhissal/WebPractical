@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form</title>
+    <style>
+        /* Ensure the page takes up the full height */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Style the form */
+        
+        form {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px 0;
+            width: 200px;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="done.html" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your name..." required>
+        </div>
+        <br>
+        <div>
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number..." required>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter Your Address..." required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
